@@ -79,7 +79,7 @@ life-restart-simulator/
 │       ├── dom.js           # h() / mount() / toast() / animateNumber()
 │       ├── state.js         # localStorage：设置、前世记录、成就
 │       ├── components.js    # statGrid / updateStatGrid / chip / effectChips
-│       └── views/           # talent.js / life.js / summary.js 三页渲染
+│       └── views/           # talent.js / life.js / summary.js / history.js 四屏渲染
 ├── test/                    # 全部零依赖
 │   ├── engine.test.js       # 3000 局 + 不变量 + 可达性 + 节奏
 │   ├── i18n.test.js         # 双语 key 全集 diff + 占位符一致性

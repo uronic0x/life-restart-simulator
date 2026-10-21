@@ -1,0 +1,23 @@
+{
+  "name": "life-restart-simulator",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A bilingual, event-driven life simulator that runs in the browser. No dependencies, no build step.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test/engine.test.js && node test/i18n.test.js",
+    "test:engine": "node test/engine.test.js",
+    "test:i18n": "node test/i18n.test.js",
+    "test:ui": "node test/ui.test.js",
+    "probe": "node tools/probe.js"
+  },
+  "keywords": [
+    "game",
+    "simulator",
+    "vanilla-js",
+    "i18n"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,104 @@
+:root {
+  color-scheme: dark;
+
+  /* palette */
+  --ink-900: #05060d;
+  --ink-800: #0b0d17;
+  --ink-700: #121524;
+  --ink-600: #1a1e31;
+  --ink-500: #232840;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  --text-100: #f4f6ff;
+  --text-200: #cdd3ea;
+  --text-400: #8b93b3;
+  --text-600: #5d6480;
+
+  /* accents */
+  --accent: #7c6cff;
+  --accent-2: #22d3ee;
+  --accent-3: #ff6b9d;
+  --gold: #ffd166;
+  --green: #4ade80;
+  --red: #ff5a6e;
+
+  --charm: #ff7eb6;
+  --intellect: #6fd3ff;
+  --physique: #7bf1a8;
+  --wealth: #ffd166;
+  --mood: #c08bff;
+
+  /* rarity */
+  --r1: #7f8aa8;
+  --r2: #4fb3ff;
+  --r3: #b07cff;
+  --r4: #ffb347;
+
+  /* geometry */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --shadow-1: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 18px 50px -20px rgba(0, 0, 0, 0.85);
+  --glow: 0 0 0 1px var(--line), 0 20px 60px -30px rgba(124, 108, 255, 0.65);
+
+  /* type */
+  --font: 'Inter', 'HarmonyOS Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, monospace;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.32s;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font);
+  background: var(--ink-900);
+  color: var(--text-200);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+button { font: inherit; color: inherit; border: none; background: none; cursor: pointer; }
+input { font: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection { background: rgba(124, 108, 255, 0.4); color: #fff; }
+
+/* scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--ink-500) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: var(--ink-500);
+  border-radius: 99px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover { background: var(--ink-600); background-clip: content-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}

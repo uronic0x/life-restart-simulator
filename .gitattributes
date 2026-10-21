@@ -1,0 +1,7 @@
+# Keep the repo LF-only regardless of the platform's autocrlf setting.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary

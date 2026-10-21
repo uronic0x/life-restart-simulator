@@ -22,6 +22,7 @@ export const zh = {
     talentsHint: '点击选中，稀有度有讲究。',
     talentCount: '已选 {n}/3',
     attributes: '初始属性',
+    attributesHint: '这一世的天赋点数已经分配好了。',
     chooseCareer: '选择你的道路',
     chooseCareerHint: '这决定你退休前的年收入。',
     chooseOne: '做出选择',

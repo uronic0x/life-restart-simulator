@@ -22,6 +22,7 @@ export const en = {
     talentsHint: 'Click to select. Rarity matters.',
     talentCount: '{n}/3 selected',
     attributes: 'Attributes',
+    attributesHint: 'Your starting points are already spent.',
     chooseCareer: 'Choose your path',
     chooseCareerHint: 'This decides your income until you retire.',
     chooseOne: 'Make a choice',

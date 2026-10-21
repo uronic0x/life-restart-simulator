@@ -42,7 +42,7 @@ export function renderTalentView({
   const body = h(
     'div',
     { class: 'panel__body' },
-    sectionHead(t('ui.attributes'), t('ui.talentCount', { n: pickedIds.length })),
+    sectionHead(t('ui.attributes'), t('ui.attributesHint')),
     statGrid(stats),
     h('div', { style: { height: '20px' } }),
     sectionHead(t('ui.talentsTitle'), t('ui.talentsHint')),
@@ -75,7 +75,7 @@ export function renderTalentView({
       { class: 'panel__head' },
       h('span', { class: 'panel__title', text: t('ui.tabTalent') }),
       h('span', { class: 'panel__spacer' }),
-      h('span', { class: 'hint', text: t('ui.born') }),
+      h('span', { class: 'hint', text: t('ui.talentCount', { n: pickedIds.length }) }),
     ),
     body,
   };
